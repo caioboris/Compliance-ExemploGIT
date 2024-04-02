@@ -37,7 +37,32 @@ class ProdutoTeste {
 
 		assertEquals(resultadoEsperado, resultadoReal);
 
-	}	
+	}
+	
+	@Test
+	void testGetterNome() {
+
+		Produto pr = new Produto(75, 180, "Iphone");
+		String resultadoEsperado = "Iphone";
+		String resultadoReal = pr.getNome();
+
+		assertEquals(resultadoEsperado, resultadoReal);		
+	}
+
+	@Test
+	void testSetterNome() {
+
+		Produto pr = new Produto();
+		//set eh void
+
+		pr.setNome("Iphone");
+
+		String resultadoEsperado = "Iphone";
+		String resultadoReal = pr.getPeso();
+
+		assertEquals(resultadoEsperado, resultadoReal);
+
+	}		
 	
 	@Test
 	void testSetterAltura() {
