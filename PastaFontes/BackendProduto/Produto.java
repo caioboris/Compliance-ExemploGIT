@@ -3,14 +3,16 @@ public class Produto {
 
 	private double peso;
 	private double altura;
+	private String nome;
 	
 	public Produto() {
 		
 	}
 	
-	public Produto(double peso, double altura) {
+	public Produto(double peso, double altura, String nome) {
 		this.peso=peso;
 		this.altura=altura;
+		this.nome=nome;
 	}
 	
 	public double getPeso() {
@@ -27,6 +29,14 @@ public class Produto {
 	
 	public void setAltura(double altura) {
 		this.altura = altura;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	
